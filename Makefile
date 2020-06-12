@@ -1,5 +1,5 @@
-DEBUG=1
-FINALPACKAGE=0
+DEBUG=0
+FINALPACKAGE=1
 
 include $(THEOS)/makefiles/common.mk
 
