@@ -182,6 +182,16 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void
                 actionString = @"No Action";
             } else if (selectedAction == 1) {
                 actionString = @"Dismiss";
+            } else if (selectedAction == 2) {
+                actionString = @"Delay Dismiss 5 Seconds";
+            } else if (selectedAction == 3) {
+                actionString = @"Delay Dismiss 15 Seconds";
+            } else if (selectedAction == 4) {
+                actionString = @"Delay Dismiss 30 Seconds";
+            } else if (selectedAction == 5) {
+                actionString = @"Delay Dismiss 60 Seconds";
+            } else if (selectedAction == 6) {
+                actionString = @"Delay Dismiss 120 Seconds";
             } else {
                 actionString = self.alertInfo.actions[selectedAction - 2];
             }
