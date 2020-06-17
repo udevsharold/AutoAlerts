@@ -224,7 +224,7 @@ BOOL autoAlertsEnabled = YES;
             NSMutableArray *actionTitles = [NSMutableArray array];
             
             for (UIAlertAction *action in alert.actions) {
-                [actionTitles addObject:action.title];
+                if (action.title) [actionTitles addObject:action.title];
             }
             
             NSMutableArray *textFieldValues = [NSMutableArray array];
